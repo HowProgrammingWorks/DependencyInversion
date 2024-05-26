@@ -1,2 +1,1 @@
-# DependencyInversion
-The Dependency Inversion Principle
+# The Dependency Inversion Principle
