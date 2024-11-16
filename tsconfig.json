@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "pretty": true
+  },
+  "include": [
+    "TypeScript/*.js",
+    "TypeScript/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
