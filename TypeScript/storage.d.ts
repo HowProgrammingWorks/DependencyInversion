@@ -6,7 +6,7 @@ export interface IFile {
 
 export interface IStorage {
   constructor(folder: string);
-  prepare(filename): Promise<IFile>;
+  prepare(filename: string): Promise<IFile>;
 }
 
 export class Storage implements IStorage {
