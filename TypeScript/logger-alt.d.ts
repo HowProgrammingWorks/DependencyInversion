@@ -1,1 +1,2 @@
-export function createLogger(filename: string): Console;
+export declare const createLogger: ICreateLogger;
+

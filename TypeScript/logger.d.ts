@@ -1,1 +1,5 @@
-export function createLogger(filename: string): Console;
+export interface ICreateLogger {
+  (filename: string): Console;
+}
+
+export const createLogger: ICreateLogger;
