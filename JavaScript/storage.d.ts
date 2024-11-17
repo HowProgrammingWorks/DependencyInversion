@@ -1,8 +1,7 @@
-export class File {
+export class PreparedFile {
   found: boolean;
   ext: string;
   stream: NodeJS.ReadableStream;
-  constructor(found: boolean, ext: string, stream: NodeJS.ReadableStream);
 }
 
 export class Storage {
