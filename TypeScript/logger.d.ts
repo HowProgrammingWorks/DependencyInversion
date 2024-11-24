@@ -1,5 +1,3 @@
-export interface ICreateLogger {
-  (filename: string): Console;
-}
+import { ICreateLogger } from "./ICreateLogger";
 
 export const createLogger: ICreateLogger;

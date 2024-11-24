@@ -4,6 +4,8 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
     "noEmit": true,
     "allowJs": true,
     "checkJs": true,
@@ -14,11 +16,6 @@
     "allowSyntheticDefaultImports": true,
     "pretty": true
   },
-  "include": [
-    "JavaScript/*.js",
-    "JavaScript/*.ts",
-    "TypeScript/*.js",
-    "TypeScript/*.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["TypeScript/**/*.js"],
+  "exclude": ["node_modules", "dist", "./*.config.js", "JavaScript/**/*.js"]
 }

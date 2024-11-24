@@ -8,10 +8,12 @@ const toBool = [() => true, () => false];
 class Storage {
   #folder = '';
 
+  /** @param {string} folder */
   constructor(folder) {
     this.#folder = path.join(process.cwd(), folder);
   }
 
+  /** @type {function(string): Promise<import('./IFile').IFile>} */
   async prepare(filename) {
     const paths = [this.#folder, filename];
     if (filename.endsWith('/')) paths.push('index.html');

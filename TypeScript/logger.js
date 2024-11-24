@@ -5,6 +5,7 @@ const path = require('node:path');
 const { Console } = require('node:console');
 const { PassThrough } = require('node:stream');
 
+/** @type {(filename: string) => Console} */
 const createLogger = (filename) => {
   const filePath = path.join(process.cwd(), filename);
   const fileStream = fs.createWriteStream(filePath);

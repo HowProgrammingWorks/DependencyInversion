@@ -1,5 +1,3 @@
-export interface IServeStatic {
-  (storage: IStorage, logger: Console, port: number);
-}
+import { IServeStatic } from "./IServeStatic";
 
 export const serveStatic: IServeStatic;
